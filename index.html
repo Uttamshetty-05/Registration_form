@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Advanced Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Registration Form</h2>
+
+    <form id="regForm">
+
+        <input type="text" id="name" placeholder="Full Name">
+        <small class="error" id="nameErr"></small>
+
+        <input type="text" id="username" placeholder="Username">
+        <small class="error" id="userErr"></small>
+
+        <input type="email" id="email" placeholder="Email">
+        <small class="error" id="emailErr"></small>
+
+        <input type="tel" id="phone" placeholder="Phone Number">
+        <small class="error" id="phoneErr"></small>
+
+        <input type="date" id="dob">
+        <small class="error" id="dobErr"></small>
+
+        <textarea id="address" placeholder="Address"></textarea>
+        <small class="error" id="addrErr"></small>
+
+        <input type="password" id="password" placeholder="Password">
+        <small class="error" id="passErr"></small>
+
+        <input type="password" id="confirmPassword" placeholder="Confirm Password">
+        <small class="error" id="confirmErr"></small>
+
+        <label>
+            <input type="checkbox" id="terms"> Accept Terms & Conditions
+        </label>
+        <small class="error" id="termsErr"></small>
+
+        <button type="submit">Register</button>
+    </form>
+
+    <div id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
